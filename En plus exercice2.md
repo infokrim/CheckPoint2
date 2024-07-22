@@ -22,7 +22,7 @@ Maintenant que le dossier est crée, il faut aller dans propriétés en faisant 
 
 Puis dans la fenêtre propriétés qui s'affiche aller dans l'onglet partage puis cliquer sur le bouton Partage avancé.      
 
-G![GIF2_paradvance](https://github.com/user-attachments/assets/5e0f119c-a007-4f77-9b80-5f51f9699407)     
+![GIF2_paradvance](https://github.com/user-attachments/assets/5e0f119c-a007-4f77-9b80-5f51f9699407)     
    
 
 Dans la fenêtre de partage avancé, cocher la case partager ce dossier.    
@@ -48,8 +48,9 @@ Je vais maintenant allumer le PC winserv sur lequel les fichiers du script de l'
 
 Ouvrir l'explorateur de fichier, puis aller cliquer la flèche à gauche de network.     
 
+![pcs_karshare](https://github.com/user-attachments/assets/d307b21e-a758-4917-ac43-4c7cc8cc1628)      
 
-pcs1_karshare   
+ 
 
 Le dossier karimshare est accessible depuis le pc winser.   
 
@@ -100,10 +101,10 @@ Cliquer sur le bouton lecture vert pour éxécuter le script ouvert.
 ![GIF6_runscript](https://github.com/user-attachments/assets/74abfde8-0db7-4a97-b7af-27ea256e9f5e)    
    
 
-On constate qu'une fenêtre PowerShell s'ouvre furtivement avec du rouge qui s'inscrit dans la fenêtre ce qui indique une erreure.   
+On constate qu'une fenêtre PowerShell s'ouvre furtivement avec du rouge qui s'inscrit dans la fenêtre ce qui indique une erreur.   
 La fenêtre se ferme et le script s'arrête.   
 
-Je reconnais en lisant la seule ligne du script une première erreure.
+Je reconnais en lisant la seule ligne du script une première erreur.
 
 **Erreur 1 :**
 
