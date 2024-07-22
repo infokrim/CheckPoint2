@@ -4,4 +4,5 @@
 
 
 ##### Effectué en dehors du timing
-##### Ajout d'un fichier "En plus exercice2.md" qui explique tout l'exercice 2 
+##### Ajout d'un fichier "En plus exercice2.md" qui explique tout l'exercice 2     
+![etudiants-gifs-animes-658044](https://github.com/user-attachments/assets/08b17358-edf4-4546-8e8d-bed95714ca87)
