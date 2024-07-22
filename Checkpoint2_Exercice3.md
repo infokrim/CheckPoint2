@@ -87,14 +87,16 @@ Ce serveur attribuera automatiquement des adresses IP aux ordinateurs ainsi que 
 Dans le paquet N°5, l'adresse MAC du matériel qui initialise la communication est **00:50:79:66:68:00**.    
 Cette adresse correspondant à **PC1**.     
 
-WS4a
+![WS4a_addinf](https://github.com/user-attachments/assets/3544e0a7-81db-4bc5-a853-aef7f595f34c)    
+
 
 ### **Q.3.12**      
 
 Oui, la communication a réussi.   
 Les paquets ICMP Echo Request et Echo Reply (ping) montrent que PC1 (10.10.4.1) communique avec PC4 (10.10.4.2).    
 
-WS5
+![WS5_PC4](https://github.com/user-attachments/assets/88c229d1-e1b0-4e4d-967c-72b42b90d871)
+
 
 
 ### **Q.3.13**         
@@ -108,7 +110,8 @@ WS5
   - Adresse IP : 10.10.4.2   
   - Adresse MAC : 00:50:79:66:68:03    
   
-WS7
+![WS7_reqrep](https://github.com/user-attachments/assets/2e99d375-d4e4-4a86-a64a-f5d4922b04c3)    
+
 
 ### **Q.3.14**     
 
@@ -132,7 +135,8 @@ Son rôle est de résoudre l'adresse MAC d'un hôte à partir de son adresse IP.
 
 ### **Q.3.16**       
 
-WS8a   
+![WS8a_src](https://github.com/user-attachments/assets/86945c89-3256-4898-bfc2-0f02fe6c28b7)     
+ 
 
 L'initialisateur de la communication est **PC3** avec l'adresse IP **10.10.80.3**.
 
@@ -142,7 +146,8 @@ L'initialisateur de la communication est **PC3** avec l'adresse IP **10.10.80.3*
 Le protocole encapsulé est **ICMP (Internet Control Message Protocol)**.      
 Son rôle est de tester la connectivité (ping) entre les PC sur le réseau.     
 
-WS10    
+![WS10_tocol](https://github.com/user-attachments/assets/25dd676c-0e5a-40da-a308-2f484e2406cb)
+    
 
 ### **Q.3.18**    
 
@@ -150,7 +155,8 @@ WS10
 Non, cette communication n'a pas réussi.   
 Le message ICMP Destination Unreachable indique que le routeur B ne peut pas atteindre l'hôte destination **10.11.80.2**.      
 
-WS11    
+![WS11_masq](https://github.com/user-attachments/assets/89c1da93-17be-470c-b90d-68053c31cddb)
+  
 
 
 ### **Q.3.19**      
