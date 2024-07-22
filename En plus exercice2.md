@@ -14,14 +14,16 @@ Création du dossier à la racine du disque dur du PC client1 :
 
 Aller sur le disque dur du PC sur le lecteur c et creer un dossier qu'on nommera "karimshare"
 
-Gif1_Pcc     
+     
+![GIF1_PSsharedir](https://github.com/user-attachments/assets/9194874c-38f1-40bf-8fda-1f94ccf1778a)    
 
 
 Maintenant que le dossier est crée, il faut aller dans propriétés en faisant un clic droit sur le dossier puis en choisissant propriétés.    
 
 Puis dans la fenêtre propriétés qui s'affiche aller dans l'onglet partage puis cliquer sur le bouton Partage avancé.      
 
-Gif2_Pcc    
+G![GIF2_paradvance](https://github.com/user-attachments/assets/5e0f119c-a007-4f77-9b80-5f51f9699407)     
+   
 
 Dans la fenêtre de partage avancé, cocher la case partager ce dossier.    
 Puis cliquer sur le boutons autorisations.   
@@ -31,7 +33,8 @@ On peut ajouter si on veut certains utilisateurs et leur assigner des droits dif
 Mais dans notre cas on va rester sur tous les utilisateurs et leur assigner le droit "Modifier" et "Lecture" en cochant les cases portant le même nom dans la colonne Autoriser.      
 Il est préférable de ne pas cocher "Contrôle Total" dans autorisations. Une bonne habitude de sécurité à garder.    
 
-Gif3_Pcc
+![GIF3_paradvance](https://github.com/user-attachments/assets/2383e11c-b3bf-4083-b5f6-0a4c904e9882)     
+
 
 Ayant un soucis avec la VM serveur qui s'éteint régulièrement, j'ai effectué cette opération sur le PC client1.    
 Je voulais le faire sur le PC winserv mais il s'est éteint entretemps. Ca ne change rien à cette configuration.   
@@ -45,6 +48,7 @@ Je vais maintenant allumer le PC winserv sur lequel les fichiers du script de l'
 
 Ouvrir l'explorateur de fichier, puis aller cliquer la flèche à gauche de network.     
 
+
 pcs1_karshare   
 
 Le dossier karimshare est accessible depuis le pc winser.   
@@ -56,7 +60,8 @@ Selectionner tous les fichiers puis à l'aide d'un clique droit sur ce dossier, 
 Aller dans le dossier karimshare puis faire un clique droit et chosir coller.   
 
 
-gif1_copyfiles    
+![GIF1_copyfiles](https://github.com/user-attachments/assets/f9320a43-aba4-423b-9679-081d82c94348)     
+   
 
 
 Maintenant direction le PC client1 pour récupérer les fichiers.     
@@ -75,13 +80,15 @@ Création d'un dossier scripts à la racine puis copie des fichiers depuis le do
 Coller fichiers script dans le repertoire script de la racine du pc client1 pour pouvoir les tester.
 
 
-gif4_recupscript
+![GIF4_recupscripts](https://github.com/user-attachments/assets/d849264c-6070-4162-929c-f5de796ec3d4)
+
 
 
 - Ouverture PowerShell ISE :
 Taper PowerShell ISE pui éxécuter en tant qu'administrateur.   
 
-gif5_lanc......
+![GIF5_lancepwsise](https://github.com/user-attachments/assets/a1f2ed76-9ef6-40ee-ad2d-e1059cd90e30)     
+
 
 - Ouverture et éxécution du script "Main.ps1"
 
@@ -90,14 +97,15 @@ Cliquer sur le bouton lecture vert pour éxécuter le script ouvert.
 
 - Résultat :
 
-gif6run   
+![GIF6_runscript](https://github.com/user-attachments/assets/74abfde8-0db7-4a97-b7af-27ea256e9f5e)    
+   
 
 On constate qu'une fenêtre PowerShell s'ouvre furtivement avec du rouge qui s'inscrit dans la fenêtre ce qui indique une erreure.   
 La fenêtre se ferme et le script s'arrête.   
 
 Je reconnais en lisant la seule ligne du script une première erreure.
 
-**Erreure 1 :**
+**Erreur 1 :**
 
 Cette ligne de commande est utilisée pour **démarrer PowerShell en tant qu'administrateur** et pour exécuter le script **"AddLocalUsers.ps1"** situé dans **"C:\Temp"**.   
 
@@ -137,7 +145,8 @@ J'y retrouve bien la ligne de commande suivante :
 La ligne de commande attribue un nouvel utilisateur au groupe "Utilisateur".
 En voulant ouvrir le répertoire correspondant au groupe portant le même nom, on constate que "Utilisateurs" comprend bien un s à la fin .    
 
-pcc2_repuser   
+![pcc2_verifrepusers](https://github.com/user-attachments/assets/b858412b-8897-4e46-87b2-5e712310cb32)     
+   
 
 Je vais donc modifier la ligne de commande  en ajoutant un s à "Utilisateur".   
 Ce qui donne :
@@ -147,11 +156,12 @@ Ce qui donne :
 **Relancement du premier script après modification du deuxième script :**    
 
 Je relance le premier script pour voir si tout fonctionne :   
+
+ ![GIF8_runscrprincmod](https://github.com/user-attachments/assets/e123b5b6-010c-4ce9-8606-cb6c1501cb55)    
+
+ ![GIF9_2runscrprincmod](https://github.com/user-attachments/assets/b84f1c00-3770-4a91-84e6-82ace9e1d09f)     
  
- gif8  
- gif9   
- 
-Pas de signalement d'erreur.     
+ Pas de signalement d'erreur.     
 
 
 ---------------------------------------------------
@@ -193,12 +203,14 @@ Anaïs;Bourgeois;sweetcakes;Directeur;Comptabilite;Utilisateur du service Compta
 
 Utilisateurs crées après lancement du script et avant modification :
   
+![pcc4_repuseravtmod](https://github.com/user-attachments/assets/cb6608fc-ddc4-4b52-981e-222d4b70abc4)
 
-pcc4   
+   
  
 Utilisateurs crées après lancement du script et après modification :
 
-pcc6annaest la    
+![pcc6_annaestla](https://github.com/user-attachments/assets/6f6dfe51-6363-4155-a247-b0823a3c2982)
+
 
 Il y a de l'amélioration Anna a été crée.   
 
@@ -228,8 +240,9 @@ $UserInfo = @{
 
 Vérification en relançant le script après avoir supprimé les utilisateurs du script pour qu'ils soient recrées.   
 
-pcc8adddescription    
+ 
 
+![pcc8_adddescript](https://github.com/user-attachments/assets/06cf4d00-3ead-4c07-a422-87a994c0a387)
   
 
 
@@ -264,9 +277,8 @@ Vérification en relançant le script après avoir supprimé les utilisateurs du
 
 Résultat :     
 
-pcc9_addusgreeen     
-
-
+![pcc9_addpassgreen](https://github.com/user-attachments/assets/6cd44598-4421-48f8-a042-da4c9a18409b)    
+    
 
 ## **Q.2.9**     
 
@@ -298,15 +310,14 @@ J'utilise la méthode 2 pour ajouter la journalisation de l'activité.
 Implémentation au début du script :
    
 
-pcc10
+![pcc10_addpassgreen](https://github.com/user-attachments/assets/31300a87-cc95-4270-80a8-09b3c9b3e453)    
+
 
 
 
 Lancement du script puis ouverture du fichier log pour vérifier la journalisation effectuée :    
 
-
-pc11addlog   
-
+![pcc11_addlog](https://github.com/user-attachments/assets/20b202f5-d499-43d4-9cb4-a04763ef5a95)     
 
 
 ## **Q.2.10**     
@@ -324,11 +335,13 @@ else
 }
 ```   
 
-pcc12a_addredline    
+![pcc12_addredline](https://github.com/user-attachments/assets/0daaaf1e-96af-436e-8af5-7eb48dc8e15d)    
+ 
 
 le résultat donne :
 
-pcc13    
+![pcc13_resredlin](https://github.com/user-attachments/assets/185ea6de-1869-45d0-8174-d82282c734d3)    
+    
 
 ## **Q.2.11**    
 
